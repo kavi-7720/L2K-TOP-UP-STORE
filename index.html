@@ -17,81 +17,6 @@
       padding: 20px;
       text-align: center;
     }
-    header h1 {
-      color: #00ffcc;
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-    }
-    .contact {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px;
-    }
-    .contact p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 10px;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      background: #1a1a1a;
-      padding: 10px;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>L2K TOP UP STORE</h1>
-    <p>Gaming Top Up Store - Colombo, Avissawella</p>
-  </header>
-
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 0740682507</p>
-    <p><strong>WhatsApp:</strong> 0740682507</p>
-    <p><strong>Ez Cash:</strong> 0740682507</p>
-    <p><strong>Email:</strong> l2ktopupstore@gmail.com</p>
-    <a class="whatsapp-button" href="https://wa.me/94740682507" target="_blank">Message on WhatsApp</a>
-  </section>
-
-  <footer>
-    <p>© 2025 L2K TOP UP STORE. All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>L2K TOP UP STORE</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #111;
-      color: #fff;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      text-align: center;
-    }
     .logo {
       width: 150px;
       height: auto;
@@ -187,183 +112,204 @@
     <tr><td>Bundle 1</td><td>2760</td></tr>
     <tr><td>Bundle 2</td><td>4150</td></tr>
   </table>
-</section><section class="products">
-  <h2>🔥 Weekly / Monthly Passes</h2>
+</section><section style="background: #0f172a; color: white; padding: 30px; text-align: center;">
+  <h2 style="color: #38bdf8;">💳 Online Payment</h2>
+  <p>ඔබට පහත Payment Method එකක් භාවිතයෙන් ගෙවීම සිදු කළ හැක:</p>
 
-  <table class="product-table">
-    <tr><th>Package</th><th>Price (LKR)</th></tr>
+  <div style="margin-top: 20px; background: #1e293b; padding: 20px; border-radius: 10px;">
+    <h3>🟢 EzCash</h3>
+    <p>Number: <strong>0740682507</strong></p>
+    <p>Name: <strong>L2K TOP UP STORE</strong></p>
+    <p>Transaction Note: <em>Your Game ID</em></p>
+  </div>
 
-    <tr>
-      <td>
-        Weekly Pass  
-        <img src="weekly-pass-logo.png" alt="Weekly Pass Logo" style="height: 40px; margin-left: 10px;" />
-      </td>
-      <td>120</td>
-    </tr>
+  <div style="margin-top: 20px; background: #1e293b; padding: 20px; border-radius: 10px;">
+    <h3>💰 Bank Transfer</h3>
+    <p>Bank: <strong>Sampath Bank</strong></p>
+    <p>Acc No: <strong>1234567890</strong></p>
+    <p>Name: <strong>Kavishka Gimhan</strong></p>
+    <p>Branch: <strong>Avissawella</strong></p>
+  </div>
 
-    <tr><td>Weekly+ Pass</td><td>470</td></tr>
-    <tr><td>Monthly Pass</td><td>2290</td></tr>
-    <tr><td>Bundle 1</td><td>2760</td></tr>
-    <tr><td>Bundle 2</td><td>4150</td></tr><!DOCTYPE html>
+  <div style="margin-top: 20px; background: #1e293b; padding: 20px; border-radius: 10px;">
+    <h3>📩 Confirm Payment</h3>
+    <p>WhatsApp Screenshot to: <strong>0740682507</strong></p>
+    <a href="https://wa.me/94740682507" style="color: #38bdf8; text-decoration: underline;">📲 Click here to WhatsApp Us</a>
+  </div>
+</section><section style="padding: 30px; background-color: #0f172a; color: white; text-align: center;">
+  <h2 style="color: #38bdf8;">🪙 My Wallet</h2>
+
+  <div style="background: #1e293b; padding: 20px; margin: 20px auto; max-width: 450px; border-radius: 10px;">
+    <p>👤 Username: <strong>Kavishka</strong></p>
+    <p>💰 Balance: <strong id="wallet-balance">Rs. 0.00</strong></p>
+
+    <input type="number" id="recharge-amount" placeholder="Enter amount (LKR)" style="margin: 10px; padding: 10px; width: 90%; border-radius: 8px;" /><br/>
+
+    <input type="text" id="ezcash-ref" placeholder="EzCash Transaction Number" style="margin: 10px; padding: 10px; width: 90%; border-radius: 8px;" /><br/>
+
+    <button onclick="rechargeWallet()" style="background-color: #38bdf8; padding: 10px 20px; border-radius: 8px; margin-top: 10px;">📲 Recharge Wallet</button>
+
+    <p style="margin-top: 20px;">EzCash Number for payment: <strong>0740682507</strong></p>
+    <p>Send Screenshot to: <a href="https://wa.me/94740682507" target="_blank" style="color: #38bdf8;">WhatsApp</a></p>
+  </div>
+</section>
+
+<script>
+  let balance = 0;
+
+  function rechargeWallet() {
+    const amount = parseFloat(document.getElementById('recharge-amount').value);
+    const txnRef = document.getElementById('ezcash-ref').value;
+
+    if (!amount || amount <= 0 || txnRef.trim() === "") {
+      alert("Please enter valid amount and EzCash reference number.");
+      return;
+    }
+
+    // Add to balance
+    balance += amount;
+    document.getElementById('wallet-balance').innerText = "Rs. " + balance.toFixed(2);
+    
+    // Success message
+    alert("Recharge successful!\nRs. " + amount.toFixed(2) + " added to your wallet.\nRef: " + txnRef);
+
+    // Clear input fields
+    document.getElementById('recharge-amount').value = "";
+    document.getElementById('ezcash-ref').value = "";
+  }
+</script><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register - L2K TOP UP STORE</title>
+  <title>My Wallet</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
       color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
 
-    .register-form {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 0 10px #0ea5e9;
-    }
-
-    .register-form h2 {
+    .wallet-section {
+      padding: 30px 15px;
       text-align: center;
-      margin-bottom: 20px;
-      color: #38bdf8;
     }
 
-    .register-form input {
-      width: 100%;
-      padding: 10px;
+    .wallet-box {
+      background: #1e293b;
+      padding: 25px;
+      margin: auto;
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px #0ea5e9aa;
+      transition: 0.3s;
+    }
+
+    .wallet-box:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 25px #38bdf8cc;
+    }
+
+    .wallet-box h2 {
+      color: #38bdf8;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .wallet-box p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .wallet-box input {
+      width: 90%;
+      padding: 12px;
       margin: 10px 0;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
+      font-size: 16px;
     }
 
-    .register-form button {
-      background: #0ea5e9;
-      color: white;
-      padding: 10px;
+    .wallet-box button {
+      background-color: #38bdf8;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 24px;
       border: none;
-      border-radius: 5px;
-      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
       cursor: pointer;
+      transition: 0.3s;
     }
 
-    .register-form button:hover {
-      background: #0284c7;
+    .wallet-box button:hover {
+      background-color: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 32px;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .icon:hover {
+      color: #38bdf8;
+      transform: scale(1.3) rotate(8deg);
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <form class="register-form" onsubmit="return registerUser()">
-    <h2>Register</h2>
-    <input type="text" id="name" placeholder="Full Name" required />
-    <input type="email" id="email" placeholder="Email Address" required />
-    <input type="text" id="phone" placeholder="Phone Number" required />
-    <input type="password" id="password" placeholder="Create Password" required />
-    <button type="submit">Register</button>
-  </form>
+
+  <section class="wallet-section">
+    <div class="wallet-box">
+      <div class="icon">🪙</div>
+      <h2>My Wallet</h2>
+
+      <p>👤 Username: <strong>Kavishka</strong></p>
+      <p>💰 Balance: <strong id="wallet-balance">Rs. 0.00</strong></p>
+
+      <input type="number" id="recharge-amount" placeholder="Enter amount (LKR)" />
+      <input type="text" id="ezcash-ref" placeholder="EzCash Transaction Number" />
+
+      <button onclick="rechargeWallet()">📲 Recharge Wallet</button>
+
+      <p style="margin-top: 20px;">EzCash Number for payment: <strong>0740682507</strong></p>
+      <p>Send Screenshot: <a href="https://wa.me/94740682507" target="_blank">WhatsApp</a></p>
+    </div>
+  </section>
 
   <script>
-    function registerUser() {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const password = document.getElementById('password').value;
+    let balance = 0;
 
-      alert("✅ Registered Successfully!\nName: " + name + "\nEmail: " + email + "\nPhone: " + phone);
-      
-      // 👉 Real website එකකට නම් data server එකට save කරන්න වෙයි (PHP, Firebase, etc.)
-      return false; // prevent form reload
-    }
-  </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - L2K TOP UP STORE</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    function rechargeWallet() {
+      const amount = parseFloat(document.getElementById('recharge-amount').value);
+      const txnRef = document.getElementById('ezcash-ref').value.trim();
 
-    .login-form {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 0 10px #0ea5e9;
-    }
-
-    .login-form h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
-
-    .login-form input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .login-form button {
-      background: #0ea5e9;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-      cursor: pointer;
-    }
-
-    .login-form button:hover {
-      background: #0284c7;
-    }
-  </style>
-</head>
-<body>
-  <form class="login-form" onsubmit="return loginUser()">
-    <h2>Login</h2>
-    <input type="email" id="loginEmail" placeholder="Email Address" required />
-    <input type="password" id="loginPassword" placeholder="Password" required />
-    <button type="submit">Login</button>
-  </form>
-
-  <script>
-    function loginUser() {
-      const email = document.getElementById('loginEmail').value;
-      const password = document.getElementById('loginPassword').value;
-
-      // 🔐 Check credentials - sample only
-      if (email === "test@example.com" && password === "123456") {
-        alert("✅ Login Successful!");
-        // redirect to homepage (example)
-        window.location.href = "index.html";
-      } else {
-        alert("❌ Invalid email or password");
+      if (!amount || amount <= 0 || txnRef === "") {
+        alert("Please enter a valid amount and EzCash reference number.");
+        return;
       }
 
-      return false; // prevent form reload
+      balance += amount;
+      document.getElementById('wallet-balance').innerText = "Rs. " + balance.toFixed(2);
+
+      alert("Recharge successful!\nRs. " + amount.toFixed(2) + " added.\nRef: " + txnRef);
+
+      document.getElementById('recharge-amount').value = "";
+      document.getElementById('ezcash-ref').value = "";
     }
   </script>
+
 </body>
 </html>
-  </table>
-</section>
