@@ -1,18 +1,4 @@
-.form-container {
-  max-width: 400px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-.form-container form {
-  display: flex;
-  flex-direction: column;
-}
-.form-container input,
-.form-container select {
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.products {
+  background-color: #1c1c1c;
+  box-shadow: 0 0 15px #00ffcc44;
 }
