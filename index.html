@@ -1,36 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register | L2K TOPUP STORE</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L2K TOP UP STORE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">L2K TOP UP</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#wallet"><i class="fas fa-wallet"></i> Wallet</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>  <!-- Hero Section -->  <header class="hero" id="home">
+    <div class="hero-content">
+      <h2>Welcome to L2K Top Up Store</h2>
+      <p>Trusted Gaming Top Up Store in Sri Lanka</p>
+    </div>
+  </header>  <!-- Products Section -->  <section class="products" id="products">
+    <h2>Game Top Ups</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="freefire-logo.png" alt="Free Fire">
+        <h3>Free Fire Diamonds</h3>
+        <p>100 Diamonds - Rs.300</p>
+        <a href="https://wa.me/94740682507" class="btn">Top Up</a>
+      </div>
+      <div class="product">
+        <img src="pubg-logo.png" alt="PUBG">
+        <h3>PUBG UC</h3>
+        <p>60 UC - Rs.350</p>
+        <a href="https://wa.me/94740682507" class="btn">Top Up</a>
+      </div>
+      <div class="product">
+        <img src="mlbb-logo.png" alt="MLBB">
+        <h3>MLBB Diamonds</h3>
+        <p>100 Diamonds - Rs.280</p>
+        <a href="https://wa.me/94740682507" class="btn">Top Up</a>
+      </div>
+    </div>
+  </section>  <!-- Wallet Section -->  <section class="wallet" id="wallet">
+    <h2>Wallet Recharge</h2>
+    <form class="wallet-form">
+      <label for="rn">Ez Cash R/N Number:</label>
+      <input type="text" id="rn" placeholder="07XXXXXXXX" required /><label for="amount">Amount (Rs):</label>
+  <input type="number" id="amount" required />
 
-  <header>
-    <h1>L2K TOPUP STORE</h1>
-  </header>
+  <button type="submit" class="btn">Recharge Wallet</button>
+</form>
+<p>Current Balance: Rs.0.00 (UI Demo)</p>
 
-  <main class="form-container">
-    <h2>User Registration</h2>
-    <form action="#" method="post">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-
-      <button type="submit" class="btn">Register</button>
-    </form>
-    <p>Already have an account? <a href="login.html">Login</a></p>
-  </main>
-
+  </section>  <!-- Contact Section -->  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Colombo, AVISSAWELLA</p>
+    <p>📞 0740682507</p>
+    <p>📧 l2ktopupstore@gmail.com</p>
+    <a href="https://wa.me/94740682507" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </section>  <footer>
+    <p>&copy; 2025 L2K Top Up Store. All rights reserved.</p>
+  </footer>
 </body>
 </html>
