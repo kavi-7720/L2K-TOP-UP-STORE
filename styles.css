@@ -1,1 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images.pexels.com/photos/2582928/pexels-photo-2582928.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
 
+.main-content {
+  padding: 100px 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black for readability */
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 700px;
+}
