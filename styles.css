@@ -1,0 +1,70 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+          padding: 0;
+            background: #fff9f3;
+              color: #333;
+              }
+
+              a {
+                text-decoration: none;
+                  color: #d35400;
+                  }
+
+                  .hero {
+                    background: #d35400;
+                      color: white;
+                        text-align: center;
+                          padding: 80px 20px;
+                          }
+
+                          .cta-button {
+                            background: #fff;
+                              color: #d35400;
+                                padding: 10px 20px;
+                                  border-radius: 5px;
+                                    font-weight: bold;
+                                    }
+
+                                    .section {
+                                      padding: 50px 20px;
+                                        text-align: center;
+                                        }
+
+                                        .services-grid {
+                                          display: flex;
+                                            gap: 20px;
+                                              justify-content: center;
+                                                flex-wrap: wrap;
+                                                }
+
+                                                .service-card {
+                                                  background: white;
+                                                    padding: 15px;
+                                                      border-radius: 8px;
+                                                        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                                                          width: 200px;
+                                                          }
+
+                                                          .service-card img {
+                                                            width: 100%;
+                                                              border-radius: 5px;
+                                                              }
+
+                                                              .dark {
+                                                                background: #ffe4ca;
+                                                                }
+
+                                                                .features {
+                                                                  list-style: none;
+                                                                    padding: 0;
+                                                                      font-size: 18px;
+                                                                      }
+
+                                                                      footer {
+                                                                        background: #d35400;
+                                                                          color: white;
+                                                                            text-align: center;
+                                                                              padding: 20px;
+                                                                              }
+}
