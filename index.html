@@ -36,37 +36,7 @@
       padding: 20px;
       border-radius: 10px;
       margin: 20px;
-    }<section class="products">
-  <h2>💎 Diamond Price List</h2>
-  <table class="product-table">
-    <tr>
-      <th>Diamonds</th>
-      <th>Price (LKR)</th>
-      <th>Diamonds</th>
-      <th>Price (LKR)</th>
-    </tr>
-    <tr><td>25</td><td>75</td><td>2180</td><td>5780</td></tr>
-    <tr><td>50</td><td>150</td><td>3240</td><td>8600</td></tr>
-    <tr><td>100</td><td>285</td><td>5000</td><td>13300</td></tr>
-    <tr><td>200</td><td>570</td><td>5600</td><td>14200</td></tr>
-    <tr><td>310</td><td>870</td><td>10060</td><td>26000</td></tr>
-    <tr><td>520</td><td>1450</td><td>11500</td><td>29300</td></tr>
-    <tr><td>1060</td><td>2850</td><td>12567</td><td>34500</td></tr>
-    <tr><td>1580</td><td>4300</td><td>13500</td><td>39000</td></tr>
-  </table>
-</section>
-
-<section class="products">
-  <h2>🔥 Weekly / Monthly Passes</h2>
-  <table class="product-table">
-    <tr><th>Package</th><th>Price (LKR)</th></tr>
-    <tr><td>Weekly Pass</td><td>120</td></tr>
-    <tr><td>Weekly+ Pass</td><td>470</td></tr>
-    <tr><td>Monthly Pass</td><td>2290</td></tr>
-    <tr><td>Bundle 1</td><td>2760</td></tr>
-    <tr><td>Bundle 2</td><td>4150</td></tr>
-  </table>
-</section>
+    }
     .contact p {
       font-size: 18px;
       margin: 10px 0;
@@ -112,7 +82,37 @@
   </footer>
 
 </body>
-</html><section style="padding: 30px; background-color: #0f172a; color: white; text-align: center;">
+</html><section class="products">
+  <h2>💎 Diamond Price List</h2>
+  <table class="product-table">
+    <tr>
+      <th>Diamonds</th>
+      <th>Price (LKR)</th>
+      <th>Diamonds</th>
+      <th>Price (LKR)</th>
+    </tr>
+    <tr><td>25</td><td>75</td><td>2180</td><td>5780</td></tr>
+    <tr><td>50</td><td>150</td><td>3240</td><td>8600</td></tr>
+    <tr><td>100</td><td>285</td><td>5000</td><td>13300</td></tr>
+    <tr><td>200</td><td>570</td><td>5600</td><td>14200</td></tr>
+    <tr><td>310</td><td>870</td><td>10060</td><td>26000</td></tr>
+    <tr><td>520</td><td>1450</td><td>11500</td><td>29300</td></tr>
+    <tr><td>1060</td><td>2850</td><td>12567</td><td>34500</td></tr>
+    <tr><td>1580</td><td>4300</td><td>13500</td><td>39000</td></tr>
+  </table>
+</section>
+
+<section class="products">
+  <h2>🔥 Weekly / Monthly Passes</h2>
+  <table class="product-table">
+    <tr><th>Package</th><th>Price (LKR)</th></tr>
+    <tr><td>Weekly Pass</td><td>120</td></tr>
+    <tr><td>Weekly+ Pass</td><td>470</td></tr>
+    <tr><td>Monthly Pass</td><td>2290</td></tr>
+    <tr><td>Bundle 1</td><td>2760</td></tr>
+    <tr><td>Bundle 2</td><td>4150</td></tr>
+  </table>
+</section><section style="padding: 30px; background-color: #0f172a; color: white; text-align: center;">
   <h2 style="color: #38bdf8;">🪙 My Wallet</h2>
 
   <div style="background: #1e293b; padding: 20px; margin: 20px auto; max-width: 400px; border-radius: 10px;">
@@ -138,4 +138,210 @@
       alert("Please enter a valid amount.");
     }
   }
-</script>
+</script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Wallet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: white;
+    }
+
+    .wallet-section {
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .wallet-box {
+      background: #1e293b;
+      padding: 25px;
+      margin: auto;
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px #0ea5e9aa;
+      transition: 0.3s;
+    }
+
+    .wallet-box:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 25px #38bdf8cc;
+    }
+
+    .wallet-box h2 {
+      color: #38bdf8;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .wallet-box p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .wallet-box input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .wallet-box button {
+      background-color: #38bdf8;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .wallet-box button:hover {
+      background-color: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 32px;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .icon:hover {
+      color: #38bdf8;
+      transform: scale(1.3) rotate(8deg);
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="wallet-section">
+    <div class="wallet-box">
+      <div class="icon">🪙</div>
+      <h2>My Wallet</h2>
+
+      <p>👤 Username: <strong>Kavishka</strong></p>
+      <p>💰 Balance: <strong id="wallet-balance">Rs. 0.00</strong></p>
+
+      <input type="number" id="recharge-amount" placeholder="Enter amount (LKR)" />
+      <input type="text" id="ezcash-ref" placeholder="EzCash Transaction Number" />
+
+      <button onclick="rechargeWallet()">📲 Recharge Wallet</button>
+
+      <p style="margin-top: 20px;">EzCash Number for payment: <strong>0740682507</strong></p>
+      <p>Send Screenshot: <a href="https://wa.me/94740682507" target="_blank">WhatsApp</a></p>
+    </div>
+  </section>
+
+  <script>
+    let balance = 0;
+
+    function rechargeWallet() {
+      const amount = parseFloat(document.getElementById('recharge-amount').value);
+      const txnRef = document.getElementById('ezcash-ref').value.trim();
+
+      if (!amount || amount <= 0 || txnRef === "") {
+        alert("Please enter a valid amount and EzCash reference number.");
+        return;
+      }
+
+      balance += amount;
+      document.getElementById('wallet-balance').innerText = "Rs. " + balance.toFixed(2);
+
+      alert("Recharge successful!\nRs. " + amount.toFixed(2) + " added.\nRef: " + txnRef);
+
+      document.getElementById('recharge-amount').value = "";
+      document.getElementById('ezcash-ref').value = "";
+    }
+  </script>
+
+</body>
+</html><!-- Navigation Bar -->
+<nav style="background-color: #0f172a; color: white; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; position: sticky; top: 0; z-index: 1000;">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <!-- Logo -->
+    <img src="https://i.imgur.com/LJ6msLF.png" alt="Logo" style="width: 40px; height: 40px;" />
+    <h1 style="font-size: 20px; color: #38bdf8;">L2K TOP UP STORE</h1>
+  </div>
+  
+  <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+    <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+    <li><a href="#products" style="color: white; text-decoration: none;">Products</a></li>
+    <li><a href="#wallet" style="color: white; text-decoration: none;">Wallet</a></li>
+    <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+    <li><a href="#login" style="color: white; text-decoration: none;">Login</a></li>
+  </ul>
+</nav><section id="products" style="padding: 40px; background-color: #f0f4f8;">
+  <h2 style="text-align: center; color: #0f172a;">🎮 Game Top-Up Packages</h2>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead style="background-color: #0f172a; color: white;">
+      <tr>
+        <th style="padding: 12px;">Game</th>
+        <th style="padding: 12px;">Package</th>
+        <th style="padding: 12px;">Price (LKR)</th>
+        <th style="padding: 12px;">Logo</th>
+      </tr>
+    </thead>
+    <tbody style="text-align: center; background-color: #ffffff;">
+      <!-- Free Fire -->
+      <tr>
+        <td>Free Fire</td>
+        <td>100 Diamonds</td>
+        <td>190</td>
+        <td><img src="freefire-logo.png" alt="Free Fire" style="height: 40px;" /></td>
+      </tr>
+      <tr>
+        <td>Free Fire</td>
+        <td>210 Diamonds</td>
+        <td>390</td>
+        <td><img src="freefire-logo.png" alt="Free Fire" style="height: 40px;" /></td>
+      </tr>
+
+      <!-- PUBG Mobile -->
+      <tr>
+        <td>PUBG Mobile</td>
+        <td>60 UC</td>
+        <td>250</td>
+        <td><img src="pubg-logo.png" alt="PUBG" style="height: 40px;" /></td>
+      </tr>
+      <tr>
+        <td>PUBG Mobile</td>
+        <td>325 UC</td>
+        <td>1300</td>
+        <td><img src="pubg-logo.png" alt="PUBG" style="height: 40px;" /></td>
+      </tr>
+
+      <!-- Mobile Legends -->
+      <tr>
+        <td>Mobile Legends</td>
+        <td>86 Diamonds</td>
+        <td>310</td>
+        <td><img src="mlbb-logo.png" alt="MLBB" style="height: 40px;" /></td>
+      </tr>
+      <tr>
+        <td>Mobile Legends</td>
+        <td>172 Diamonds</td>
+        <td>620</td>
+        <td><img src="mlbb-logo.png" alt="MLBB" style="height: 40px;" /></td>
+      </tr>
+    </tbody>
+  </table>
+              </section>
