@@ -6,388 +6,184 @@
   <title>L2K TOP UP STORE</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
     }
     header {
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      background-color: #1a1a1a;
       padding: 20px;
       text-align: center;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px #00ffcc;
     }
     header h1 {
+      color: #00ffcc;
       margin: 0;
-      font-size: 2.5em;
     }
-    .games-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 30px;
-    }
-    .game-card {
-      background-color: #1c1c1c;
-      border-radius: 10px;
+    section {
       padding: 20px;
+    }
+    .products {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+    .products h2 {
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
     }
-    .game-card img {
-      width: 100px;
-      border-radius: 8px;
+    .product-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
     }
-    .game-card h3 {
+    .product-table th,
+    .product-table td {
+      border: 1px solid #444;
+      padding: 10px;
+      font-size: 18px;
+    }
+    .contact {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+    .contact p {
+      font-size: 18px;
       margin: 10px 0;
     }
-    .topup-btn {
-      background-color: #ff9800;
-      color: black;
-      border: none;
-      padding: 10px 20px;
+    .whatsapp-button {
+      display: inline-block;
       margin-top: 10px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
       border-radius: 5px;
-      cursor: pointer;
       font-weight: bold;
     }
-    .topup-btn:hover {
-      background-color: #ffc107;
-    }
     footer {
-      background: #111;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      margin-top: 40px;
+      background: #1a1a1a;
+      padding: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <!-- 🖼️ Main Logo -->
+    <img src="logo.png" alt="L2K Logo" class="logo" />
     <h1>L2K TOP UP STORE</h1>
-    <p>Fast & Easy Mobile Game Top-Ups</p>
+    <p>Gaming Top Up Store - Colombo, Avissawella</p>
   </header>
 
-  <section class="games-section">
-    <div class="game-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Garena_Free_Fire_logo.png" alt="Free Fire"/>
-      <h3>Free Fire</h3>
-      <button class="topup-btn">Top Up Now</button>
-    </div>
-    <div class="game-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/PUBG_Mobile_logo.png" alt="PUBG Mobile"/>
-      <h3>PUBG Mobile</h3>
-      <button class="topup-btn">Top Up Now</button>
-    </div>
-    <div class="game-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Mobile_Legends_Bang_Bang_logo.png" alt="MLBB"/>
-      <h3>Mobile Legends</h3>
-      <button class="topup-btn">Top Up Now</button>
-    </div>
+  <!-- 💎 Products Section -->
+  <section class="products">
+    <h2>💎 Diamond Packages</h2>
+    <img src="logo.png" alt="L2K Logo" class="logo" style="float:right; margin-left: 20px;" />
+    <table class="product-table">
+      <tr>
+        <th>Diamonds</th>
+        <th>Price (LKR)</th>
+      </tr>
+      <tr><td>25</td><td>75</td></tr>
+      <tr><td>50</td><td>150</td></tr>
+      <tr><td>100</td><td>285</td></tr>
+      <tr><td>200</td><td>570</td></tr>
+      <tr><td>310</td><td>870</td></tr>
+      <tr><td>520</td><td>1450</td></tr>
+      <tr><td>1060</td><td>2850</td></tr>
+      <tr><td>1580</td><td>4300</td></tr>
+      <tr><td>2180</td><td>5780</td></tr>
+      <tr><td>3240</td><td>8600</td></tr>
+      <tr><td>5000</td><td>13300</td></tr>
+      <tr><td>5600</td><td>14200</td></tr>
+      <tr><td>10060</td><td>26000</td></tr>
+      <tr><td>11500</td><td>29300</td></tr>
+      <tr><td>12567</td><td>34500</td></tr>
+      <tr><td>13500</td><td>39000</td></tr>
+    </table>
+  </section>
+
+  <!-- 📞 Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 0740682507</p>
+    <p><strong>WhatsApp:</strong> 0740682507</p>
+    <p><strong>Ez Cash:</strong> 0740682507</p>
+    <p><strong>Email:</strong> l2ktopupstore@gmail.com</p>
+    <a class="whatsapp-button" href="https://wa.me/94740682507" target="_blank">Message on WhatsApp</a>
   </section>
 
   <footer>
-    &copy; 2025 L2K TOP UP STORE. All rights reserved.
+    <p>© 2025 L2K TOP UP STORE. All Rights Reserved.</p>
   </footer>
 
-</body><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Free Fire Top-Up | L2K</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: white;
-    }
-    header {
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    .form-container {
-      max-width: 400px;
-      margin: 30px auto;
-      background-color: #1c1c1c;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    }
-    label {
-      display: block;
-      margin: 15px 0 5px;
-    }
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: none;
-      background-color: #2e2e2e;
-      color: white;
-    }
-    .submit-btn {
-      background-color: #ff9800;
-      color: black;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .submit-btn:hover {
-      background-color: #ffc107;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      background: #111;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
+</body>
+</html><section class="products">
+  <h2>💎 Diamond Price List</h2>
+  <table class="product-table">
+    <tr>
+      <th>Diamonds</th>
+      <th>Price (LKR)</th>
+      <th>Diamonds</th>
+      <th>Price (LKR)</th>
+    </tr>
+    <tr><td>25</td><td>75</td><td>2180</td><td>5780</td></tr>
+    <tr><td>50</td><td>150</td><td>3240</td><td>8600</td></tr>
+    <tr><td>100</td><td>285</td><td>5000</td><td>13300</td></tr>
+    <tr><td>200</td><td>570</td><td>5600</td><td>14200</td></tr>
+    <tr><td>310</td><td>870</td><td>10060</td><td>26000</td></tr>
+    <tr><td>520</td><td>1450</td><td>11500</td><td>29300</td></tr>
+    <tr><td>1060</td><td>2850</td><td>12567</td><td>34500</td></tr>
+    <tr><td>1580</td><td>4300</td><td>13500</td><td>39000</td></tr>
+  </table>
+</section>
 
-  <header>
-    <h1>Free Fire Top-Up</h1>
-    <p>L2K TOP UP STORE</p>
-  </header>
+<section class="products">
+  <h2>🔥 Weekly / Monthly Passes</h2>
+  <table class="product-table">
+    <tr><th>Package</th><th>Price (LKR)</th></tr>
+    <tr><td>Weekly Pass</td><td>120</td></tr>
+    <tr><td>Weekly+ Pass</td><td>470</td></tr>
+    <tr><td>Monthly Pass</td><td>2290</td></tr>
+    <tr><td>Bundle 1</td><td>2760</td></tr>
+    <tr><td>Bundle 2</td><td>4150</td></tr>
+  </table>
+</section><section style="background: #0f172a; color: white; padding: 30px; text-align: center;">
+  <h2 style="color: #38bdf8;">💳 Online Payment</h2>
+  <p>ඔබට පහත Payment Method එකක් භාවිතයෙන් ගෙවීම සිදු කළ හැක:</p>
 
-  <div class="form-container">
-    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
-      <label for="playerid">Player ID:</label>
-      <input type="text" id="playerid" name="playerid" required />
-
-      <label for="amount">Top-Up Amount:</label>
-      <select id="amount" name="amount" required>
-        <option value="">-- Select Amount --</option>
-        <option value="100 Diamonds">100 Diamonds</option>
-        <option value="310 Diamonds">310 Diamonds</option>
-        <option value="520 Diamonds">520 Diamonds</option>
-        <option value="1,000 Diamonds">1,000 Diamonds</option>
-      </select>
-
-      <label for="payment">Payment Method:</label>
-      <select id="payment" name="payment" required>
-        <option value="">-- Select Payment --</option>
-        <option value="EzCash">EzCash</option>
-        <option value="Dialog">Dialog</option>
-        <option value="Bank Transfer">Bank Transfer</option>
-      </select>
-
-      <!-- WhatsApp Redirect -->
-      <input type="hidden" name="phone" value="94771234567">
-      <input type="hidden" name="text" id="whatsappText">
-
-      <button type="submit" class="submit-btn" onclick="generateWhatsAppText()">Submit Order via WhatsApp</button>
-    </form>
+  <div style="margin-top: 20px; background: #1e293b; padding: 20px; border-radius: 10px;">
+    <h3>🟢 EzCash</h3>
+    <p>Number: <strong>0740682507</strong></p>
+    <p>Name: <strong>L2K TOP UP STORE</strong></p>
+    <p>Transaction Note: <em>Your Game ID</em></p>
   </div>
 
-  <footer>
-    &copy; 2025 L2K TOP UP STORE. All rights reserved.
-  </footer>
-
-  <script>
-    function generateWhatsAppText() {
-      const playerId = document.getElementById('playerid').value;
-      const amount = document.getElementById('amount').value;
-      const payment = document.getElementById('payment').value;
-
-      const message = `Hello! I want to top-up:\nGame: Free Fire\nPlayer ID: ${playerId}\nAmount: ${amount}\nPayment: ${payment}`;
-      const whatsappInput = document.getElementById('whatsappText');
-      whatsappInput.value = encodeURIComponent(message);
-    }
-  </script>
-
-</body>
-</html>
-</html><label>Payment Method:</label>
-
-<div style="display: flex; flex-direction: column; gap: 10px;">
-  <label style="display: flex; align-items: center;">
-    <input type="radio" name="payment" value="EzCash" required />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/EZCash_logo.png" alt="EzCash" style="height: 30px; margin-left: 10px;" />
-  </label>
-
-  <label style="display: flex; align-items: center;">
-    <input type="radio" name="payment" value="Dialog" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Dialog_Axiata_logo.png" alt="Dialog" style="height: 30px; margin-left: 10px;" />
-  </label>
-
-  <label style="display: flex; align-items: center;">
-    <input type="radio" name="payment" value="Bank Transfer" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Bank_font_awesome.svg" alt="Bank Transfer" style="height: 30px; margin-left: 10px;" />
-  </label>
-</div><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>EzCash Payment Form</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: linear-gradient(135deg, #8e2de2, #4a00e0);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .form-container {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 25px;
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      width: 90%;
-      max-width: 400px;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 16px;
-      margin-top: 10px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div class="form-container">
-    <h2>EzCash Payment</h2>
-    <form onsubmit="sendToWhatsApp(event)">
-      <input type="text" id="game" placeholder="Game Name (e.g., Free Fire)" required>
-      <input type="text" id="playerid" placeholder="Player ID" required>
-      <input type="number" id="amount" placeholder="Amount (LKR)" required>
-      <input type="text" id="rnnumber" placeholder="EzCash RN Number" required>
-      <button type="submit">Submit via WhatsApp</button>
-    </form>
+  <div style="margin-top: 20px; background: #1e293b; padding: 20px; border-radius: 10px;">
+    <h3>💰 Bank Transfer</h3>
+    <p>Bank: <strong>Sampath Bank</strong></p>
+    <p>Acc No: <strong>1234567890</strong></p>
+    <p>Name: <strong>Kavishka Gimhan</strong></p>
+    <p>Branch: <strong>Avissawella</strong></p>
   </div>
 
-  <script>
-    function sendToWhatsApp(e) {
-      e.preventDefault();
-
-      let game = document.getElementById("game").value;
-      let playerid = document.getElementById("playerid").value;
-      let amount = document.getElementById("amount").value;
-      let rn = document.getElementById("rnnumber").value;
-
-      let message = `🔰 *New EzCash Payment Order* \n\n🎮 Game: ${game} \n🆔 Player ID: ${playerid} \n💰 Amount: Rs. ${amount} \n📲 EzCash RN: ${rn}`;
-
-      let phoneNumber = "94740682507"; // ✅ Your WhatsApp Number
-      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.open(url, "_blank");
-    }
-  </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>L2K TOP UP STORE</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: white;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .container {
-      padding: 20px;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: #00c853;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #009624;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>L2K TOP UP STORE</h1>
-    <form onsubmit="sendOrder(event)">
-      <input type="text" id="game" placeholder="Game Name (e.g. Free Fire)" required />
-      <input type="text" id="playerid" placeholder="Player ID / UID" required />
-      <select id="package" required>
-        <option value="">Select Package</option>
-        <option value="100 Diamonds - Rs. 350">100 Diamonds - Rs. 350</option>
-        <option value="310 Diamonds - Rs. 550">310 Diamonds - Rs. 550</option>
-        <option value="520 Diamonds - Rs. 950">520 Diamonds - Rs. 950</option>
-      </select>
-      <input type="text" id="payment" placeholder="Payment Method (EzCash)" required />
-      <input type="text" id="rnnumber" placeholder="EzCash RN Number" required />
-      <input type="text" id="phone" placeholder="Your Phone Number" required />
-      <button type="submit">Submit Order via WhatsApp</button>
-    </form>
+  <div style="margin-top: 20px; background: #1e293b; padding: 20px; border-radius: 10px;">
+    <h3>📩 Confirm Payment</h3>
+    <p>WhatsApp Screenshot to: <strong>0740682507</strong></p>
+    <a href="https://wa.me/94740682507" style="color: #38bdf8; text-decoration: underline;">📲 Click here to WhatsApp Us</a>
   </div>
-
-  <script>
-    function sendOrder(e) {
-      e.preventDefault();
-      let game = document.getElementById("game").value;
-      let playerid = document.getElementById("playerid").value;
-      let pkg = document.getElementById("package").value;
-      let payment = document.getElementById("payment").value;
-      let rn = document.getElementById("rnnumber").value;
-      let phone = document.getElementById("phone").value;
-
-      let msg = `🔰 New Top-Up Order\n🎮 Game: ${game}\n🆔 ID: ${playerid}\n💎 Package: ${pkg}\n💰 Payment: ${payment}\n📲 EzCash RN: ${rn}\n☎️ Phone: ${phone}`;
-      let phoneNumber = "94740682507";
-      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
-      window.open(url, "_blank");
-    }
-  </script>
-</body>
-</html>
+</section>
